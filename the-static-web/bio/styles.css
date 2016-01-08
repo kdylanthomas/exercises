@@ -1,0 +1,30 @@
+* {
+	font-family: 'Raleway', sans-serif;
+}
+
+nav {
+	background-color: #E64915;
+	color: #fff;
+    padding: 1% 2% 1% 1%;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	padding-right: 1%;
+}
+
+footer {
+	font-size: 0.6em;
+	color: #8F8F9A;
+	margin-top: 2%;
+}
+
+.detail {
+	display: block;
+	color: #3A393E;
+}
+
+.dates {
+	font-style: italic;
+}
