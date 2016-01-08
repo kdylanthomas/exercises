@@ -1,0 +1,59 @@
+#lcd {
+	background-color: #1ECECE;
+	color: #7F007F;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 0.85em;
+	line-height: 1.1em;
+	padding: 5%;
+	border: 2px solid #187797;
+	border-radius: 1%;
+}
+
+#golden {
+	background-color: #5FEB30;
+	color: #00FFFF;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 0.8em;
+	line-height: 0.9em;
+	padding: 3%;
+	border: 5px dotted #1B8812;
+	border-radius: 5%;
+}
+
+#bernie {
+	background-color: #1580D9;
+	color: #FF0000;
+	font-family: Garamond, Times, serif;
+	font-size: 1em;
+	line-height: 0.5em;
+	padding: 10%;
+	border: 0.5px solid #17007D;
+	border-radius: 10%;
+}
+
+#bonnaroo {
+	background-color: #D700C6;
+	color: #B9B9B9;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.25em;
+	line-height: 0.95em;
+	padding: 20%;
+	border: 4px dashed #E2CB0E;
+	border-radius: 50%;
+}
+
+#climbnash {
+	background-color: #919191;
+	color: #EAEAEA;
+	font-family: Cambria, Times, serif;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	padding: 0;
+	border: 10px dotted solid #000;
+	border-radius: 0.25%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
