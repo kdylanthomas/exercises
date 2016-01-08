@@ -1,0 +1,62 @@
+/* changed default link styling so it's easier to see changes */
+a {
+	color: #000;
+}
+
+nav {
+	border: 1px solid #7F007F;
+}
+
+nav li {
+	display: inline;
+	list-style: none;
+	padding-right: 1%;
+}
+
+.disabled {
+	color: #7F7F7F;
+}
+
+/* makes children of a with class .disabled purple */
+a .disabled {
+	color: #9F00FB;
+}
+
+/* makes a with class .disabled purple */
+a.disabled {
+	color: #9F00FB;
+}
+
+.active {
+	color: #FCEE0B;
+}
+
+#red {
+	color: red;
+}
+
+#blue {
+	color: blue;
+}
+
+#red + h4 {
+	background-color: red;
+}
+
+#blue + h4 {
+	background-color: blue;
+}
+
+.grandparent > h4 {
+	border: 1px solid black;
+	border-radius: 10%;
+}
+
+.promo {
+	font-weight: bold;
+	color: #DCBE0F;
+}
+
+input[type="text"] {
+	height: 25px;
+}
