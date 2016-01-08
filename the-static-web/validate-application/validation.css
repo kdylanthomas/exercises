@@ -1,0 +1,17 @@
+input[type="tel"]:valid {
+	background-color: #ddffdd;
+}
+
+input[type="email"]:valid {
+	background-color: #ddffdd;
+}
+
+input[type="tel"]:invalid {
+	background-color: #ffdddd;
+}
+
+input[type="email"]:invalid {
+	background-color: #ffdddd;
+}
+
+/* is it possible to select input by class? */
