@@ -1,0 +1,38 @@
+/* general nav bar styling */
+nav {
+	background-color: #CECECE;
+	padding: 1px 0;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	letter-spacing: .2em;
+}
+
+/* set initial width for li */
+li {
+	width: 5%;
+	display: inline;
+	margin-right: 3%;
+	list-style: none;
+}
+
+/* change text color for hover */
+a:hover {
+	color: #31A000;
+}
+
+/* change background color of li for hover */
+li:hover {
+	background-color: #A9A9A9;
+}
+
+/* on click, make li grow in size by 5px on left and right */
+li:active {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+
