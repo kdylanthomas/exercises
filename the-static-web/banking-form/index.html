@@ -1,0 +1,85 @@
+<form action="#" method="POST">
+<!-- Applicant first name -->
+	<fieldset>
+		<legend>Basic Info</legend>
+		  <label for="first-name">First Name</label>
+		  <input type="text" name="first-name" autofocus>
+		  <br/>
+		<!-- Applicant middle initial -->
+		  <label for="middle-init">Middle Initial</label>
+		  <input type="text" name="middle-init" autofocus>
+		  <br/>
+		<!-- Applicant last name -->
+		  <label for="last-name">Last Name</label>
+		  <input type="text" name="last-name" autofocus>
+		  <br/>
+		<!-- Applicant address -->
+		  <label for="address">Address</label>
+		  <input type="text" name="address" autofocus>
+		  <br/>
+		<!-- Applicant occupation -->
+		  <label for="occupation">First Name</label>
+		  <input type="text" name="occupation" autofocus>
+		  <br/>
+		<!-- Applicant employer -->
+		  <label for="employer">First Name</label>
+		  <input type="text" name="employer" autofocus>
+		  <br/>
+		<!-- Employer address -->
+		  <label for="employer-address">Address</label>
+		  <input type="text" name="employer-address" autofocus>
+		  <br/>
+	</fieldset>
+	<fieldset>
+		<legend>Loan Request Details</legend>
+<!-- Type of loan select element with these options: (dropdown)-->
+		<label for="loan-type">Type of loan</label>
+		<select name="loan-type" id="type">
+			<!-- 	Commercial -->
+			<option value="commercial">Commercial</option>
+			<!-- 	Real estate -->
+			<option value="realestate">Real Estate</option>
+			<!-- 	Personal -->
+			<option value="personal">Personal</option>
+			<!-- 	Mortgage -->
+			<option value="mortgage">Mortgage</option>
+		</select>
+		<br/>
+<!-- Requested amount of loan -->
+		<label for="amt-request">Requested amount of loan</label>
+		<input type="text" name="amt-request" autofocus>
+		<br/>
+<!-- Radio button elements for loan length -->
+		<label for="length">Loan length</label><br/>
+		<!-- 	5 years -->
+		<input type="radio" name="length">5 years<br/>
+		<!-- 	15 years -->
+		<input type="radio" name="length">15 years<br/>
+		<!-- 	30 years -->
+		<input type="radio" name="length">30 years<br/>
+<!-- Checkbox group for special conditions -->
+		<label for="specialconditions">Special Conditions</label><br/>
+	<!-- 	I have a down payment -->
+		<input type="checkbox" name="downpayment">I have a down payment<br/>
+	<!-- 	Out-of-state resident -->
+		<input type="checkbox" name="outofstate">Out-of-state resident<br/>
+	<!-- 	Married -->
+		<input type="checkbox" name="married">Married<br/>
+	<!-- 	Loan will be co-signed -->
+		<input type="checkbox" name="cosigner">Loan will be co-signed<br/>
+	</fieldset>
+<!-- A text area to allow for additional comments -->
+	<label for="comments">Additional Commments</label><br/>
+	<textarea name="comments" id="comments"></textarea>
+	<br/>
+<!-- Applicant email address -->
+  <label for="email-address">Email Address</label><br/>
+  <input type="email" name="email" placeholder="hi@example.com">
+  <br/>
+<!-- Application telephone number -->
+	<label for="phone-number">Phone Number</label><br/>
+	<input type="tel" name="phone-number">
+	<br/>
+<!-- submit button -->
+	<input type="submit" value="Submit Loan Form"></input>
+</form>
