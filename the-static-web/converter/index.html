@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Temperature Converter</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<form id="form">
+			<!-- input temperature -->
+			<label for="temperature">Enter a temperature to convert</label>
+			<input type="number" name="temperature" id="input-temp">
+			<!-- convert to F or C -->
+			<input type="radio" name="convert-to" id="to-f">to Fahrenheit
+			<input type="radio" name="convert-to" id="to-c">to Celsius
+			<!-- block level element for converted temperature-->
+			<div id="converted-temp"></div>
+			<!-- button that shows converted temperature on click -->
+			<button id="converter">Show Converted Temperature</button>
+			<!-- button that clears text in input -->
+			<button id="clear">Start Over</button>
+		</form>
+		<script src="converter.js"></script>
+	</body>
+</html>
