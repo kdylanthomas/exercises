@@ -19,7 +19,7 @@ function palindrome() {
 	// if the word has an odd # of letters,
 	if (stringToArray.length % 2 !== 0) {
 		// find the index of the middle letter 
-		var middleLetter = ((stringToArray.length + 1) / 2) - 1;
+		var middleLetter = ((stringToArray.length - 1) / 2);
 		// and get rid of the middle letter (e.g. "racecar" becomes "raccar")
 		stringToArray.splice(middleLetter, 1);
 		console.log("stringToArray", stringToArray);
