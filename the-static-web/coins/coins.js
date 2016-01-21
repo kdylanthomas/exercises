@@ -16,7 +16,7 @@ function coinCounter(input) {
     var addQuarters = input / quarter;
     console.log("price in terms of quarters", addQuarters);
     // round down to a whole number of quarters and add those to the coin purse
-    coinPurse.quarters = Math.floor(addQuarters);;
+    coinPurse.quarters = Math.floor(addQuarters);
     console.log("quarters", coinPurse.quarters);
     // subtract those quarters from the input
     input -= (quarter * coinPurse.quarters);
@@ -28,7 +28,7 @@ function coinCounter(input) {
   if (input / dime >= 1) {
     var addDimes = input / dime;
     console.log("price in terms of dimes", addDimes);
-    coinPurse.dimes = Math.floor(addDimes);;
+    coinPurse.dimes = Math.floor(addDimes);
     console.log("dimes", coinPurse.dimes);
     input -= (dime * coinPurse.dimes);
     input = input.toFixed(2);
@@ -38,7 +38,7 @@ function coinCounter(input) {
   if (input / nickel >= 1) {
     var addNickels = input / nickel;
     console.log("price in terms of nickels", addNickels);
-    coinPurse.nickels = Math.floor(addNickels);;
+    coinPurse.nickels = Math.floor(addNickels);
     console.log("nickels", coinPurse.nickels);
     input -= (nickel * coinPurse.nickels);
     input = input.toFixed(2);
@@ -48,7 +48,7 @@ function coinCounter(input) {
   if (input / penny >= 1) {
     var addPennies = input / penny;
     console.log("price in terms of Pennies", addPennies);
-    coinPurse.pennies = Math.floor(addPennies);;
+    coinPurse.pennies = Math.floor(addPennies);
     console.log("Pennies", coinPurse.pennies);
     input -= (penny * coinPurse.pennies);
     input = input.toFixed(2);
