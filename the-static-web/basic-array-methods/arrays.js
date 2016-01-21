@@ -14,34 +14,15 @@ function alphabits(origString) {
 
 // palindrome function - only works for single words right now
 
-function palindrome() {
+function palindrome(origString) {
 	var stringToArray = origString.split("");
-	// if the word has an odd # of letters,
-	if (stringToArray.length % 2 !== 0) {
-		// find the index of the middle letter 
-		var middleLetter = ((stringToArray.length - 1) / 2);
-		// and get rid of the middle letter (e.g. "racecar" becomes "raccar")
-		stringToArray.splice(middleLetter, 1);
-		console.log("stringToArray", stringToArray);
-	}
-	var startingPoint = stringToArray.length / 2;
-	var firstHalf = [];
-	for (var i = 0; i < startingPoint; i++) {
-		firstHalf.push(stringToArray[i]);
-	}
-	var secondHalf = [];
-	for (var i = startingPoint; i < stringToArray.length; i++) {
-		secondHalf.push(stringToArray[i]);
-	}
-	var testFirstHalf = firstHalf.join("");
-	var testSecondHalf = secondHalf.reverse().join("");
-	console.log("testFirstHalf", testFirstHalf);
-	console.log("testSecondHalf", testSecondHalf);
-	if (testFirstHalf === testSecondHalf) {
-		console.log("this word is a palindrome!");
+	var reverseArray = stringToArray.reverse();
+	var reverseToString = reverseArray.join("");
+	if (origString === reverseToString) {
+		document.write("This word is a palindrome!");
 	}
 	else {
-		console.log("this is just a boring old word.");
+		document.write("This word isn't a palindrome.");
 	}
 }
 
