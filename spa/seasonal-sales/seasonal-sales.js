@@ -1,4 +1,3 @@
-
 // Your job is to build a web page that lists all of the products, 
 // the name of the department it's in, and the price. Additionally, put a 
 // <select> element at the top of the page that contains all possible values 
@@ -51,13 +50,26 @@ function categoriesLoaded () {
 			console.log(combinedData);
 			outputToDOM();
 
+			// !!!!!!!!!!! 
+			// event listener is here for now, since it also calls outputToDOM (move to global scope later)
+			// selecting a new season recreates the HTML on the page, but with discounted prices inserted
+			discountSelects.addEventListener("change", function() {
+				event.preventDefault();
+				outputToDOM();
+			});
+
 			function outputToDOM () {
+				// set innerHTML empty to begin with so cards don't repeat themselves on a change
+				container.innerHTML = "";
 				// this refers to the products object
 				var productsRef = combinedData[0].products; 
 				// this refers to the categories object
 				var categoryRef = combinedData[1].categories;
-				console.log(categoryRef);
-				console.log(productsRef);
+				// console.log(categoryRef);
+				// console.log(productsRef);
+				// discountReference refers to the option value for the season the user selects
+				var discountReference = discountSelects.value;
+				console.log("DISCOUNT REFERENCE", discountReference);
 				// loop through each product and pull ID, name, price, and category number
 				for (var i = 0; i < productsRef.length; i++) {
 					var currentProduct = productsRef[i];
@@ -65,14 +77,16 @@ function categoriesLoaded () {
 					var prodName = currentProduct.name;
 					var prodPrice = currentProduct.price;
 					var prodCat = currentProduct.category_id;
-					var output = "";
+					// output is empty; eventually will hold all HTML to be added to page
+					var output = "";	
+					console.log("prodName", prodName);
+					console.log("prodPrice", prodPrice);
 					// start adding HTML to an output variable
-					output += `<div class="card"><h1>${prodName}</h1><h5>$${prodPrice}</h5>`;
+					output += `<div class="card"><h1>${prodName}</h1>`;
 					console.log(prodId, prodName, prodPrice, prodCat);
 					// loop through each category 
 					for (var j = 0; j < categoryRef.length; j++) {
-						var currentCategory = categoryRef[j];
-						console.log("current category name:", currentCategory.name);	
+						var currentCategory = categoryRef[j];	
 						var currentCategoryID = currentCategory.id;
 						console.log("current category ID:", currentCategoryID);
 						console.log("prod ID:", prodCat);
@@ -81,45 +95,36 @@ function categoriesLoaded () {
 							// set prodCat equal to the NAME, not the ID, of the category and print to DOM
 							prodCat = currentCategory.name;
 							console.log("this is the right product category!", prodCat);
-							output += `<h5>${prodCat}</h5></div>`;
-							container.innerHTML += output;
-						}					
+							// add the product category NAME to the card
+							output += `<h5>${prodCat}</h5>`;
+							// grab the season for a discount from the categories object
+							prodDiscount = currentCategory.season_discount;
+							console.log("discount season", prodDiscount);
+							// if the current category's discount season is the same as the season the user chose,
+							if (prodDiscount === discountReference) {
+								console.log("DISCOUNTED RATE", currentCategory.discount);
+								// calculate a discounted price
+								discountPrice = (prodPrice - (prodPrice * currentCategory.discount)).toFixed(2);
+								console.log("discounted price", discountPrice);
+								// and print the discounted price inside the card
+								output += `<h5>$${discountPrice}</h5></div>`;
+							// if the item goes on sale in a season the user did not select, 
+							} else {
+								// just print the normal price inside the card
+								output += `<h5>$${prodPrice}</h5></div>`;
+							}
+
+						}	
+
 					}
+					// put all the cards inside the container div 
+					container.innerHTML += output;
 				}
-				// !!!!!!!!!!
-				// STEP FIVE: add an event listener to the select dropdown to apply discounts 
 
-				// !!!! current problems with this: 
-					// 1: right now, it only works on the last item in the array (it's in the wrong place)
-					// 2: it performs the discount regardless of whether it's the right season
-					// maybe write this as its own function in global scope, call it inside a for loop?
-				// when the user selects a different season,			
-				discountSelects.addEventListener("change", function() {
-					console.log("you chose a different season!");
-					// loop through the options for seasons
-					for (var i = 0; i < discountSelects.options.length; i++) {
-						// go through the options and find the one that the user picked
-						if (discountSelects.options[i].selected === true) {
-							// set that value equal to "season"
-							var season = discountSelects.options[i].value;
-							console.log("season", season);
-							console.log("just the product price", prodPrice);
-							// calculate a discounted price
-							var discountedPrice = prodPrice - prodPrice * currentCategory.discount;
-							discountedPrice = discountedPrice.toFixed(2);
-							console.log("discounted price for light bulb", discountedPrice);
-						}
-
-					}
-				});
 			}
 		}
 	}
 }
-
-// function applyDiscounts() {
-
-// }
 
 var productsError = function() {
 	console.log("Houston, we have a problem.");
