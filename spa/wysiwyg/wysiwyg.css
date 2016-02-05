@@ -1,0 +1,22 @@
+.container {
+	margin: 0 auto;
+}
+
+input {
+	display: block;
+}
+img {
+	max-width: 25%;
+}
+
+.person:nth-child(2n+0) {
+	background-color: #FFDB65;
+}
+
+.person:nth-child(2n+1) {
+	background-color: #23B9FF;
+}
+
+.border {
+	border: 2px dotted black;
+}
