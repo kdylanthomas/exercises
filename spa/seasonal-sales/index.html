@@ -3,16 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Seasonal Sales</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-	<select name="season-discounts" id="season-discounts">
-		<option value="Summer">Summer</option>
-		<option value="Winter">Winter</option>
-		<option value="Autumn">Autumn</option>
-		<option value="Spring">Spring</option>
-	</select>
-	<div id="product-container"></div>
-	<script src="seasonal-sales.js"></script>
+<body class="container-fluid">
+	<div class="row">
+		<div class="page-header row-md-12">
+			<h1>Welcome to Wall Mart.</h1>
+		</div>
+	</div>
+
+	<div id="discount-bar">
+		<label for="season-discounts">Select a season:</label>
+		<select name="season-discounts" id="season-discounts">
+			<option value="Summer">Summer</option>
+			<option value="Winter">Winter</option>
+			<option value="Autumn">Autumn</option>
+			<option value="Spring">Spring</option>
+		</select>
+	</div>
+	<div id="product-container" class="row"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="seasonal-sales.js"></script>	
+
 </body>
 </html>
