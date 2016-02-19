@@ -1,4 +1,6 @@
-var famousPeople = [
+"use strict";
+
+let famousPeople = [
 	{
 	  title: "Presidential Candidate",
 	  name: "Bernie Sanders",
@@ -27,10 +29,10 @@ var famousPeople = [
 	    death: 2015
 	  }
 	},
-]
+];
 
 // add to DOM
-$(famousPeople).each(function(i, el) {
+$(famousPeople).each((i, el) => {
 	if (!el.lifespan.death) {
 		el.lifespan.death = "present";
 	}
@@ -43,11 +45,11 @@ $(famousPeople).each(function(i, el) {
 		</person></div>`);
 });
 
-var bioToReplace;
+let bioToReplace;
 // event listeners
-$('.person').each(function(i, currPerson) {
+$('.person').each((i, currPerson) => {
 	$(currPerson).on('click', function(event) {
-		var personDiv = event.currentTarget;
+		let personDiv = event.currentTarget;
 		$(personDiv).addClass('border');
 		$(personDiv).siblings().removeClass('border');
 		$('#text-input').focus();
@@ -59,7 +61,7 @@ $('.person').each(function(i, currPerson) {
 			$('#text-input').val('');
 		}
 		else {
-			var newContent = $(this).val();
+			let newContent = $(this).val();
 			$(bioToReplace).html(newContent);
 		}
 	});
