@@ -2,47 +2,48 @@
 	<title>Sandwich Maker</title>
 </head>
 <body>
-	<div><label for="bread">Choose a bread:</label></br>
-	<select name="bread" multiple="" id="bread">
-		<option value="white">White</option>
-		<option value="wheat">Wheat</option>
-		<option value="flatbread">Flatbread</option>
-	</select></div>
+	<div>
+		<label for="bread">Choose a bread:</label></br>
+		<input type="radio" class="bread" name="bread" value="white">White</input>
+		<input type="radio" class="bread" name="bread" value="wheat">Wheat</input>
+		<input type="radio" class="bread" name="bread" value="flatbread">Flatbread</input>
+	</div>
 
-	<div><label for="meat">Choose meat:</label></br>
-	<select name="meat" multiple="" id="meat">
-		<option value="turkey">Turkey</option>
-		<option value="ham">Ham</option>
-		<option value="roast-beef">Roast Beef</option>
-		<option value="pepperoni">Pepperoni</option>
-		<option value="salami">Salami</option>
-	</select></div>
+	<div>
+		<label for="condiments">Choose meat:</label></br>
+		<input type="checkbox" class="meat" value="turkey">Turkey</input>
+		<input type="checkbox" class="meat" value="ham">Ham</input>
+		<input type="checkbox" class="meat" value="roast-beef">Roast Beef</input>
+		<input type="checkbox" class="meat" value="pepperoni">Pepperoni</input>
+		<input type="checkbox" class="meat" value="salami">Salami</input>
+	</div>
 
-	<div><label for="cheese">Choose cheese:</label></br>
-	<select name="cheese" multiple="" id="cheese">
-		<option value="provolone">Provolone</option>
-		<option value="cheddar">Cheddar</option>
-		<option value="pepperjack">Pepperjack</option>
-	</select></div>
+	<div>
+		<label for="cheese">Choose cheese:</label></br>
+		<input type="checkbox" class="cheese" value="provolone">Provolone</input>
+		<input type="checkbox" class="cheese" value="cheddar">Cheddar</input>
+		<input type="checkbox" class="cheese" value="pepperjack">Pepperjack</input>
+	</div>
 
-	<div><label for="veggies">Choose veggies:</label></br>
-	<select name="veggies" multiple="" id="veggies">
-		<option value="lettuce">Lettuce</option>
-		<option value="tomato">Tomato</option>
-		<option value="onion">Onion</option>
-		<option value="green-pepper">Green pepper</option>
-		<option value="pickle">Pickle</option>
-		<option value="avocado">Avocado</option>
-		<option value="spinach">Spinach</option>
-	</select></div>
 
-	<div><label for="condiments">Choose condiments:</label></br>
-	<select name="condiments" multiple="" id="condiments">
-	<option value="dijon">Dijon Mustard</option>
-	<option value="honey-mustard">Honey Mustard</option>
-	<option value="mayo">Mayonnaise</option>
-	<option value="oil-vinegar">Oil and Vinegar</option>
-	</select></div>
+	<div>
+		<label for="veggies">Choose veggies:</label></br>
+		<input type="checkbox" class="veggies" value="lettuce">Lettuce</input>
+		<input type="checkbox" class="veggies" value="tomato">Tomato</input>
+		<input type="checkbox" class="veggies" value="onion">Onion</input>
+		<input type="checkbox" class="veggies" value="green-pepper">Green pepper</input>
+		<input type="checkbox" class="veggies" value="pickle">Pickle</input>
+		<input type="checkbox" class="veggies" value="avocado">Avocado</input>
+		<input type="checkbox" class="veggies" value="spinach">Spinach</input>
+	</div>
+
+	<div>
+	<label for="condiments">Choose condiments:</label></br>
+		<input type="checkbox" class="condiments" value="dijon">Dijon Mustard</input>
+		<input type="checkbox" class="condiments" value="honey-mustard">Honey Mustard</input>
+		<input type="checkbox" class="condiments" value="mayo">Mayonnaise</input>
+		<input type="checkbox" class="condiments" value="oil-vinegar">Oil and Vinegar</input>
+	</div>
 
 	<button name="place-order" id="place-order">Place Your Order</button>
 	<div id="final-order"></div>
