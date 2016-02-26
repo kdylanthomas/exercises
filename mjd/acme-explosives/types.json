@@ -1,0 +1,40 @@
+{
+    "types": [
+        {
+            "id": 0,
+            "category": 0,
+            "name": "Personal",
+            "description": "Fireworks intended for recreational use during holiday celebrations"
+        },
+        {
+            "id": 1,
+            "category": 0,
+            "name": "Municipal",
+            "description": "Fireworks used for large civic holiday celebrations in public spaces"
+        },
+        {
+            "id": 2,
+            "category": 0,
+            "name": "Commercial",
+            "description": "Top-grade fireworks that can be customized for your business needs"
+        },
+        {
+            "id": 3,
+            "category": 1,
+            "name": "Personal",
+            "description": "Perfect explosives for blowing something up in your own backyard"
+        },
+        {
+            "id": 4,
+            "category": 1,
+            "name": "Professional",
+            "description": "Explosives designed for use by construction and demolition workers"
+        },
+        {
+            "id": 5,
+            "category": 1,
+            "name": "Fight Club",
+            "description": "The first rule of fight club explosives: don't talk about fight club explosives"
+        }
+    ]
+}
