@@ -13,3 +13,12 @@
 h1 {
 	display: inline-block;
 }
+
+button {
+	max-height: 25px;
+}
+
+#bang {
+	max-height: 20px;
+	max-width: 20px;
+}
