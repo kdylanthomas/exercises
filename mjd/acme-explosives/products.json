@@ -1,0 +1,112 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "type": 0,
+            "name": "Fairy Sparklers",
+            "description": "Multi-colored sparklers that are safe for any age."
+        },
+        {
+            "id": 1,
+            "type": 0,
+            "name": "Bottle Rockets",
+            "description": "Standard Bottle rockets."
+        },
+        {
+            "id": 2,
+            "type": 0,
+            "name": "Roman Candles",
+            "description": "They shoot giant balls of fireworks into the sky."
+        },
+        {
+            "id": 3,
+            "type": 1,
+            "name": "Independence Day Kit",
+            "description": "Basic red, white, and blue fireworks for the Fourth of July."
+        },
+        {
+            "id": 4,
+            "type": 1,
+            "name": "New Years Kit",
+            "description": "Beautiful silver and gold fireworks perfect for New Years Eve"
+        },
+        {
+            "id": 5,
+            "type": 1,
+            "name": "Thanksgiving Kit",
+            "description": "This kit includes fireworks that make giant turkey imagery in the sky"
+        },
+        {
+            "id": 6,
+            "type": 2,
+            "name": "Business Basic",
+            "description": "Basic fireworks suitable for your company's next event."
+        },
+        {
+            "id": 7,
+            "type": 2,
+            "name": "Business Advanced",
+            "description": "Includes five customizable color options."
+        },
+        {
+            "id": 8,
+            "type": 2,
+            "name": "Business Platinum",
+            "description": "Includes one customizable sky image perfect for your company's logo."
+        },
+        {
+            "id": 9,
+            "type": 3,
+            "name": "Basic Tiny Bomb",
+            "description": "Blow up one thing at your house."
+        },
+        {
+            "id": 10,
+            "type": 3,
+            "name": "Double Tiny Bomb",
+            "description": "Blow up two things at your house."
+        },
+        {
+            "id": 11,
+            "type": 3,
+            "name": "Triple Tiny Bomb",
+            "description": "Blow up three things at your house. Wow!"
+        },
+        {
+            "id": 12,
+            "type": 4,
+            "name": "Ceramic Demolition",
+            "description": "Basic demolition tool for blowing up sinks and stuff."
+        },
+        {
+            "id": 13,
+            "type": 4,
+            "name": "Brick and Mortar Demolition",
+            "description": "This demolition material can blow up a small building."
+        },
+        {
+            "id": 14,
+            "type": 4,
+            "name": "Steel Beam Demolition",
+            "description": "Out of stock -- even jet fuel can't melt steel beams."
+        },
+        {
+            "id": 15,
+            "type": 5,
+            "name": "Lye Bomb",
+            "description": "Don't talk about Fight Club."
+        },
+        {
+            "id": 16,
+            "type": 5,
+            "name": "Gelatin Bomb",
+            "description": "Seriously, don't talk about Fight Club."
+        },
+        {
+            "id": 17,
+            "type": 5,
+            "name": "Animal Fat Bomb",
+            "description": "Is this even possible?"
+        }
+    ]
+}
