@@ -61,11 +61,6 @@ function loadProducts(url) {
 	productsRequest.open('GET', url);
 	productsRequest.send();
 }
-// 1. select category from dropdown
-// 2. use Promise to read categories.json
-// 3. then, load types.json
-// 4. then, load products.json
-// 5. then, after ALL 3 are loaded, diplay products
 
 let promise = loadCategories('categories.json');
 promise.then(
