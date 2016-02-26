@@ -1,0 +1,51 @@
+<head>
+	<title>Sandwich Maker</title>
+</head>
+<body>
+	<div><label for="bread">Choose a bread:</label></br>
+	<select name="bread" multiple="" id="bread">
+		<option value="white">White</option>
+		<option value="wheat">Wheat</option>
+		<option value="flatbread">Flatbread</option>
+	</select></div>
+
+	<div><label for="meat">Choose meat:</label></br>
+	<select name="meat" multiple="" id="meat">
+		<option value="turkey">Turkey</option>
+		<option value="ham">Ham</option>
+		<option value="roast-beef">Roast Beef</option>
+		<option value="pepperoni">Pepperoni</option>
+		<option value="salami">Salami</option>
+	</select></div>
+
+	<div><label for="cheese">Choose cheese:</label></br>
+	<select name="cheese" multiple="" id="cheese">
+		<option value="provolone">Provolone</option>
+		<option value="cheddar">Cheddar</option>
+		<option value="pepperjack">Pepperjack</option>
+	</select></div>
+
+	<div><label for="veggies">Choose veggies:</label></br>
+	<select name="veggies" multiple="" id="veggies">
+		<option value="lettuce">Lettuce</option>
+		<option value="tomato">Tomato</option>
+		<option value="onion">Onion</option>
+		<option value="green-pepper">Green pepper</option>
+		<option value="pickle">Pickle</option>
+		<option value="avocado">Avocado</option>
+		<option value="spinach">Spinach</option>
+	</select></div>
+
+	<div><label for="condiments">Choose condiments:</label></br>
+	<select name="condiments" multiple="" id="condiments">
+	<option value="dijon">Dijon Mustard</option>
+	<option value="honey-mustard">Honey Mustard</option>
+	<option value="mayo">Mayonnaise</option>
+	<option value="oil-vinegar">Oil and Vinegar</option>
+	</select></div>
+
+	<button name="place-order" id="place-order">Place Your Order</button>
+	<div id="final-order"></div>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="dist/bundle.js"></script>
+</body>
