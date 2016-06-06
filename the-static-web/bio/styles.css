@@ -3,11 +3,14 @@
 }
 
 nav {
+<<<<<<< HEAD
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 10;
 	width: 100%;
+=======
+>>>>>>> e2edbf6ab7dcaf3fcabd6052cd10390a5ac1db46
 	background-color: #E64915;
 	color: #fff;
     padding: 1% 2% 1% 1%;
@@ -25,11 +28,14 @@ footer {
 	margin-top: 2%;
 }
 
+<<<<<<< HEAD
 .main-body {
 	position: relative;
 	top: 50px;
 }
 
+=======
+>>>>>>> e2edbf6ab7dcaf3fcabd6052cd10390a5ac1db46
 .detail {
 	display: block;
 	color: #3A393E;
