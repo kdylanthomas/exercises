@@ -16,4 +16,3 @@ Modern JavaScript Developer
 ___________________________
 
 This folder contains exercises that implement promises, prototypal inheritance, automation of JSLint and other tasks with Gulp, unit testing with Jasmine, and modular code with Browserify.
-=======
