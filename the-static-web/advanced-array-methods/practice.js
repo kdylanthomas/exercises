@@ -1,5 +1,5 @@
 var planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uranus", "neptune"];
-var planetContainer = document.getElementById("planets"); 
+var planetContainer = document.getElementById("planets");
 planetContainer.innerHTML = "";
 // Use the forEach method to add the name of each planet to a div element in your HTML
 

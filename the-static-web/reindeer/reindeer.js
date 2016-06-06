@@ -6,16 +6,9 @@ var hohohoElement = document.getElementById("coloredReindeer");
 function reindeerRenamer() {
 	var coloredReindeer = [];
 	for (var i = 0; i < reindeer.length; i++) {
-<<<<<<< HEAD
 		coloredReindeer.push(colors[i] + " " + reindeer[i]);
 	}
-	
 	hohohoElement.innerHTML = coloredReindeer.join(", ");
-=======
-		coloredReindeer.push(" " + colors[i] + " " + reindeer[i]);
-	}
-	hohohoElement.innerHTML = coloredReindeer;
->>>>>>> e2edbf6ab7dcaf3fcabd6052cd10390a5ac1db46
 };
 
 
@@ -33,9 +26,5 @@ function reindeerRenamerImproved() {
 			coloredReindeer.push(colors[i] + " " + reindeer[i]);
 		}		
 	}
-<<<<<<< HEAD
 	hohohoElement.innerHTML = coloredReindeer.join(", ");
-=======
-	hohohoElement.innerHTML = coloredReindeer;
->>>>>>> e2edbf6ab7dcaf3fcabd6052cd10390a5ac1db46
 }
