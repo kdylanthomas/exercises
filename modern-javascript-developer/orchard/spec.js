@@ -24,15 +24,15 @@ describe("orchard", function () {
 		expect(Tree.prototype.trim).toBeDefined();
 	});
 	it("should reduce height of tree by integer passed as argument to trim", function() {
-	// when you invoke trim with an arg, trim should call decreaseHeight(arg)
+		// when you invoke trim with an arg, trim should call decreaseHeight(arg)
 		var fakeTree = new Tree();
 		spyOn(fakeTree, "decreaseHeight");
 		fakeTree.trim(2);
 		expect(fakeTree.decreaseHeight).toHaveBeenCalledWith(2);
 	});
 	it("should reduce branches of tree by one when trim is called", function() {
-	// When you invoke the trim method on Tree, the values of the branches property should be decreased by one.
-		expect(PearTree.trim(2)).toBe(1);
+		// When you invoke the trim method on Tree, the values of the branches property should be decreased by one.
+		expect(PearTree.trim()).toBe(1);
 	});
 	it("should increase height of tree by integer passed as argument to grow", function() {
 		// when you invoke grow with an arg, grow should call increaseHeight(arg)

@@ -32,7 +32,7 @@ function coinCounter(input) {
     console.log("dimes", coinPurse.dimes);
     input -= (dime * coinPurse.dimes);
     input = input.toFixed(2);
-    console.log("input", input);  
+    console.log("input", input);
   }
 
   if (input / nickel >= 1) {

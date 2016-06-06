@@ -6,9 +6,10 @@ var hohohoElement = document.getElementById("coloredReindeer");
 function reindeerRenamer() {
 	var coloredReindeer = [];
 	for (var i = 0; i < reindeer.length; i++) {
-		coloredReindeer.push(" " + colors[i] + " " + reindeer[i]);
+		coloredReindeer.push(colors[i] + " " + reindeer[i]);
 	}
-	hohohoElement.innerHTML = coloredReindeer;
+	
+	hohohoElement.innerHTML = coloredReindeer.join(", ");
 };
 
 
@@ -26,5 +27,5 @@ function reindeerRenamerImproved() {
 			coloredReindeer.push(colors[i] + " " + reindeer[i]);
 		}		
 	}
-	hohohoElement.innerHTML = coloredReindeer;
+	hohohoElement.innerHTML = coloredReindeer.join(", ");
 }

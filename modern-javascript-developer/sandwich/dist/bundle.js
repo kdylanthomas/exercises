@@ -36,7 +36,7 @@ module.exports = SandwichMaker;
 },{"./bread":3,"./cheese":4,"./condiments":5,"./meat":6,"./veggies":7}],2:[function(require,module,exports){
 'use strict';
 
-let SandwichMaker = require('./SandwichMaker')
+let SandwichMaker = require('./SandwichMaker');
 
 let selectedToppings = "";
 let selectedBread;
@@ -46,6 +46,11 @@ let selectedVeggies;
 let selectedCondiment;
 
 console.log("Sandwich Maker", SandwichMaker);
+
+// problem: each time you click an option, added to sandwich price/list
+// can't remove options, easy to accidentally add options twice
+
+// solution: use listeners to manipulate array of ingredients, then run functions on each item
 
 $('.bread').each((i, option) => {
 	$(option).on('click', function() {

@@ -70,3 +70,7 @@ promise.then(
 		loadProducts('products.json')
 	});
 
+
+function add (a, b) {
+	console.log(a + b);
+}

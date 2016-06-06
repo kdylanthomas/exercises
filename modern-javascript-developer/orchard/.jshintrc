@@ -1,0 +1,5 @@
+{
+  "predef": ["window", "document", "jQuery", "$", "console" ],
+  "esversion": 6,
+  "globalstrict": true
+}

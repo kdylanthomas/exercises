@@ -1,0 +1,28 @@
+.blue {
+	color: blue;
+}
+
+.large {
+	font-size: 4em;
+}
+
+.border {
+	border: 2px dotted #980085;
+}
+
+.rounded {
+	border-radius: 10px;
+}
+
+section:first-of-type {
+	font-weight: bold;
+}
+
+section:last-of-type {
+	font-weight: bold;
+	font-style: italic;
+}
+
+button {
+	display: block;
+}

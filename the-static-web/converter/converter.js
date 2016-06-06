@@ -66,8 +66,6 @@ var clear = document.getElementById("clear");
 clear.addEventListener("click", clearInput);
 
 function clearInput(event) {
-  console.log("event", event);
   document.getElementById("input-temp").value = "";
   convertedTemp.innerHTML = "";
-  console.log("convertedTemp", convertedTemp);
 }
